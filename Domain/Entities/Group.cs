@@ -10,4 +10,6 @@ public class Group : DbEntity
     
     public List<Student> Students { get; set; }
     public Faculty Faculty { get; set; }
+    public Guid TeacherId { get; set; }
+    public required Teacher Teacher { get; set; }
 }

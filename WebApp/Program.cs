@@ -82,5 +82,6 @@ public class Program
         builderServices.AddScoped<IFacultyRepository, FacultyRepository>();
         builderServices.AddScoped<IGroupRepository, GroupRepository>();
         builderServices.AddScoped<IStudentRepository, StudentRepository>();
+        builderServices.AddScoped<ITeacherRepository, TeacherRepository>();
     }
 }
