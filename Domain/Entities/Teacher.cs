@@ -1,16 +1,13 @@
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Domain.Abstract;
 
 namespace Domain.Entities;
 
-[Table("students")]
-public class Student : DbEntity
+[Table("teachers")]
+public class Teacher : DbEntity
 {
     public required string FirstName { get; set; }
     public required string LastName { get; set; }
-    
-    public Group Group { get; set; }
 
-    public List<Mark> Marks { get; } = [];
+    public List<Group> Teachers { get; } = [];
 }
