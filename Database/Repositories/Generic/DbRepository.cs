@@ -9,7 +9,7 @@ public class DbRepository<T, Key> : IDbRepository<T, Key>
     where T:class, IDbEntity<Key>  
     where Key:IComparable
 {
-    private DbContext _context;
+    protected DbContext _context;
     public DbRepository(DbContext context)
     {
         _context = context;
